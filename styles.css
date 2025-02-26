@@ -1,3 +1,10 @@
 #logo{
     border-radius: 50px;
 }
+body {
+    background: url('bmw-m8-competition-coupe-5k-fn.jpg') no-repeat center center/cover;
+    height: 100vh;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.6); 
+}
+
