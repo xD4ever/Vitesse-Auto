@@ -2,9 +2,8 @@
     border-radius: 50px;
 }
 body {
-    background: url('bmw-m8-competition-coupe-5k-fn.jpg') no-repeat center center/cover;
+    background-color: #2d2d2d;
     height: 100vh;
     margin: 0;
-    background-color: rgba(0, 0, 0, 0.6); 
+    font-family: 'Arial', sans-serif;
 }
-
