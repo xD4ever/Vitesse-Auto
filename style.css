@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-color: white;
+    height: 100vh;
+    margin: 0;
+}
+
+#text-content{
+    color: black;
+}
+
+#navbar{
+    display: flex;
+    max-width: 100%;
+    margin: auto;
+    padding: auto;
+    flex-direction: row;
+}
+
+#logo {
+    border-radius: 50%;
+}
+
+
+#navbar-list-left, #navbar-list-right {
+    margin-left: auto;
+    padding-right: 10px;
+    list-style: none;
+}
+
+#title {
+    font-weight: bold;
+    margin-left: 10px;
+    color: red;
+}
+
+#paragraphe{
+    margin-left: 10px;
+    font-weight: bold;
+}

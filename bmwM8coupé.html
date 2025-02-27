@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitesse-Auto - BMW</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark"> 
+        <div class="container">
+            <img src="logo.png" alt="Logo Vitesse-Auto" class="navbar-brand" width="80px" height="80px" id="logo">
+            <a href="index.html" class="navbar-brand">Vitesse-Auto</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="bmw.html" class="nav-link">BMW</a></li>
+                    <li class="nav-item"><a href="Audi.html" class="nav-link">AUDI</a></li>
+                    <li class="nav-item"><a href="vw.html" class="nav-link">VOLKSWAGEN</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="container mt-5">
+    <div id="carouselBMW" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="1500">
+                <img src="bmw-4556370_1280.webp" class="d-block w-100" alt="BMW Image 1">
+            </div>
+            <div class="carousel-item" data-bs-interval="1500">
+                <img src="M8-dashboard.jpg" class="d-block w-100" alt="BMW Image 2">
+            </div>
+            <div class="carousel-item" data-bs-interval="1500">
+                <img src="M8-engine.jpg" class="d-block w-100" alt="BMW Image 3">
+            </div>
+            <div class="carousel-item" data-bs-interval="1500">
+                <img src="M8-trunk.jpg" class="d-block w-100" alt="BMW Image 4">
+            </div>
+        </div>
+    </div>
+</div>
+<main class="container mt-5 text-white ">
+    <h1>BMW M8 Coupé - Caractéristiques</h1>
+    <p><strong> Moteur & Performances :</strong></p>
+    <ul>
+        <li>Motorisation : 4.4L V8 biturbo (M8 Competition)</li>
+        <li>Puissance : 617 ch</li>
+        <li>Couple : 750 Nm</li>
+        <li>Transmission : Automatique à 8 rapports</li>
+        <li>Traction : Intégrale (xDrive AWD) avec mode propulsion</li>
+    </ul>
+    <p><strong> Consommation de carburant :</strong></p>
+    <ul>
+        <li>M8 Competition : ~14 L/100 km en ville / ~9 L/100 km sur autoroute</li>
+    </ul>
+    <p><strong> Intérieur & Équipements :</strong></p>
+    <ul>
+        <li>Places : 4 passagers (Coupé ou Cabriolet)</li>
+        <li>Infodivertissement : Écran incurvé de 14,9 pouces avec BMW iDrive 8.5</li>
+        <li>Connectivité : Apple CarPlay, Android Auto, WiFi intégré</li>
+        <li>Confort : Sièges en cuir Merino, toit en carbone, éclairage d'ambiance</li>
+    </ul>
+    <p><strong> Sécurité & Technologie :</strong></p>
+    <ul>
+        <li>Régulateur de vitesse adaptatif, alerte de franchissement de ligne</li>
+        <li>Freinage d'urgence automatique, assistance au stationnement</li>
+        <li>Caméra 360° et affichage tête haute</li>
+    </ul>
+    <p><strong> Catégorie de location :</strong> Luxe / Supercar GT</p>
+    <p><strong> Idéal pour :</strong> Expériences de conduite sportive, voyages exclusifs, événements haut de gamme</p>
+    <form action="Rental">
+        <input type="submit" value="Louer" class="btn btn-primary my-2" id="btn-location">
+    </form>
+</main>
+
+<footer class="bg-dark text-white text-center py-3 mt-5">
+    <p>&copy;2025 Vitesse-Auto - Tous droits réservés.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

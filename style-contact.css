@@ -1,0 +1,26 @@
+body {
+    background: url(cntact-background.jpg);
+    height: 100vh;
+}
+.overlay {
+            background: rgba(0, 0, 0, 0.6);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            flex-direction: column;
+            padding: 20px;
+}
+.overlay h1 {
+            font-size: 3rem;
+            font-weight: bold;
+}
+.overlay p {
+            font-size: 1.2rem;
+            max-width: 600px;        
+}
+#logo {
+    border-radius: 50%;
+}   

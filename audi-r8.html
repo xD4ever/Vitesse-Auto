@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitesse-Auto - Audi R8</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
+            <img src="logo.png" alt="Logo Vitesse-Auto" class="navbar-brand" width="80" height="80" id="logo">
+            <a href="index.html" class="navbar-brand">Vitesse-Auto</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="bmw.html" class="nav-link">BMW</a></li>
+                    <li class="nav-item"><a href="audi.html" class="nav-link">AUDI</a></li>
+                    <li class="nav-item"><a href="vw.html" class="nav-link">VOLKSWAGEN</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="container mt-5">
+    <div class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="1500">
+                <img src="r81.jpg" class="d-block w-100" alt="Image 1">
+            </div>
+            <div class="carousel-item" data-bs-interval="1500">
+                <img src="r82.jpg" class="d-block w-100" alt="Image 2">
+            </div>
+            <div class="carousel-item" data-bs-interval="1500">
+                <img src="r83.jpg" class="d-block w-100" alt="Image 3">
+            </div>
+        </div>
+    </div>
+</div>
+<main class="container mt-5 text-white">
+    <h1>Audi R8 2024 - Caractéristiques</h1>
+    <p><strong>Moteur & Performances :</strong></p>
+    <ul>
+        <li>Motorisation : V10 atmosphérique de 5,2 litres</li>
+        <li>Puissance : 570 ch (419 kW) pour la version performance RWD ; 620 ch (456 kW) pour la version performance quattro</li>
+        <li>Couple : 550 Nm à 6 400 tr/min (RWD) ; 580 Nm à 6 600 tr/min (quattro)</li>
+        <li>Transmission : Automatique à 7 rapports S tronic à double embrayage</li>
+        <li>Traction : Propulsion arrière (RWD) ou intégrale (quattro)</li>
+        <li>Vitesse maximale : 329 km/h (RWD) ; 331 km/h (quattro)</li>
+        <li>Accélération 0 à 100 km/h : 3,7 s (RWD) ; 3,1 s (quattro)</li>
+    </ul>
+    <p><strong>Consommation de carburant :</strong></p>
+    <ul>
+        <li>R8 V10 performance RWD : 12,6 à 12,9 L/100 km en cycle mixte</li>
+        <li>R8 V10 performance quattro : 13,1 L/100 km en cycle mixte</li>
+    </ul>
+    <p><strong>Intérieur & Équipements :</strong></p>
+    <ul>
+        <li>Places : 2 passagers</li>
+        <li>Infodivertissement : Audi Virtual Cockpit avec écran de 12,3 pouces</li>
+        <li>Système audio : Bang & Olufsen avec 13 haut-parleurs et une puissance totale de 550 W</li>
+        <li>Connectivité : Apple CarPlay, Android Auto, point d'accès Wi-Fi intégré</li>
+        <li>Confort : Sièges en cuir Nappa fin, climatisation automatique, volant multifonction en cuir</li>
+    </ul>
+    <p><strong>Sécurité & Technologie :</strong></p>
+    <ul>
+        <li>Systèmes d'assistance : Régulateur de vitesse, aide au stationnement avant et arrière avec caméra de recul</li>
+        <li>Freinage : Disques en céramique avec étriers à 6 pistons à l'avant et 4 pistons à l'arrière</li>
+        <li>Éclairage : Phares à LED avec feux de route laser en option</li>
+    </ul>
+    <p><strong>Dimensions & Poids :</strong></p>
+    <ul>
+        <li>Longueur : 4,43 m</li>
+        <li>Largeur : 1,94 m</li>
+        <li>Hauteur : 1,24 m</li>
+        <li>Empattement : 2,65 m</li>
+        <li>Poids à vide : 1 590 kg (RWD) ; 1 595 kg (quattro)</li>
+        <li>Volume de coffre : 112 litres</li>
+    </ul>
+    <p><strong>Catégorie de location :</strong> Luxe / Coupé sportif</p>
+    <p><strong>Idéal pour :</strong> Voyages d'affaires, escapades haut de gamme, déplacements élégants</p>
+    <form action="Rental">
+        <input type="submit" value="Louer" class="btn btn-primary my-2" id="btn-location">
+    </form>
+</main>
+
+<footer class="bg-dark text-white text-center py-3 mt-5">
+    <p>&copy;2025 Vitesse-Auto - Tous droits réservés.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

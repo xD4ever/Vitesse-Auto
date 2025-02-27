@@ -1,0 +1,9 @@
+#logo{
+    border-radius: 50px;
+}
+body {
+    background: grey;
+    height: 100vh;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.6); 
+}
