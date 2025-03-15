@@ -1,26 +1,25 @@
-const http = require("http");
-const fs = require('fs').promises;
+import express from 'express';
 
-const host = 'localhost';
-const port = 8000;
+const app = express();
 
+app.use(express.json());
 
-const requestListener = function (req, res) {
-    res.setHeader("Content-Type", "text/html");
-    res.writeHead(200);
-    res.end(indexFile);
-};
+app.get('/', (req, res) => {
+    let user_ip = 
+        req.headers['cf-connecting-ip'] || 
+        req.headers['x-real-ip'] || 
+        req.headers['x-forwarded-for'] || 
+        req.socket.remoteAddress || '';
 
-const server = http.createServer(requestListener);
+    // Si l'adresse IP est une IPv4 mappée en IPv6 (par exemple, ::ffff:192.168.1.1), extraire la partie IPv4
+    if (user_ip.startsWith('::ffff:')) {
+        user_ip = user_ip.replace('::ffff:', '');
+    }
 
-fs.readFile(__dirname + "/index.html")
-    .then(contents => {
-        indexFile = contents;
-        server.listen(port, host, () => {
-            console.log(`Server is running on http://${host}:${port}`);
-        });
-    })
-    .catch(err => {
-        console.error(`Could not read index.html file: ${err}`);
-        process.exit(1);
-    });
+    return res.json({ user_ip });
+});
+
+// Écouter uniquement sur IPv4 pour éviter de passer par défaut à IPv6 (::1)
+app.listen(3000, '0.0.0.0', () => {
+    console.log('Server is running on port 3000');
+});
